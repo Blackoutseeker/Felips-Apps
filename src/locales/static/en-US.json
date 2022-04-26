@@ -1,0 +1,20 @@
+{
+  "page": {
+    "body": {
+      "searchInputPlaceholder": "Search apps",
+      "titles": {
+        "goToHomePage": "Go to home page",
+        "clearSearchInput": "Clear search input",
+        "linkedInProfile": "View LinkedIn profile",
+        "googlePlayStoreProfile": "View Google Play Store profile",
+        "gitHubProfile": "View GitHub profile",
+        "viewSourceCode": "View source code",
+        "sendEmail": "Send email",
+        "donations": {
+          "payPal": "Donate via PayPal",
+          "buyMeACoffee": "Donate via Buy Me a Coffee"
+        }
+      }
+    }
+  }
+}
