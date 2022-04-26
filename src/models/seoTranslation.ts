@@ -1,4 +1,4 @@
-type SeoTranslation = {
+export type SeoTranslation = {
   page: {
     head: {
       description: string
@@ -6,5 +6,3 @@ type SeoTranslation = {
     }
   }
 }
-
-export default SeoTranslation

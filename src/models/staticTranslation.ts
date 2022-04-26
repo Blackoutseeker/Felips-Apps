@@ -1,4 +1,4 @@
-type StaticTranslation = {
+export type StaticTranslation = {
   page: {
     body: {
       searchInputPlaceholder: string
@@ -18,5 +18,3 @@ type StaticTranslation = {
     }
   }
 }
-
-export default StaticTranslation

@@ -1,4 +1,4 @@
-type ContentTranslation = {
+export type ContentTranslation = {
   presentationText: string
   viewOnGooglePlayStore: string
   viewSourceCode: string
@@ -9,5 +9,3 @@ type ContentTranslation = {
   motivationTitle: string
   motivationText: string
 }
-
-export default ContentTranslation
