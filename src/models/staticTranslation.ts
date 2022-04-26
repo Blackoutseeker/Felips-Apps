@@ -1,9 +1,5 @@
 type StaticTranslation = {
   page: {
-    head: {
-      description: string
-      keywords: string[]
-    }
     body: {
       searchInputPlaceholder: string
       titles: {
