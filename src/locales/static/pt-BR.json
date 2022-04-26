@@ -1,0 +1,20 @@
+{
+  "page": {
+    "body": {
+      "searchInputPlaceholder": "Pesquisar aplicativos",
+      "titles": {
+        "goToHomePage": "Ir para a página inicial",
+        "clearSearchInput": "Limpar pesquisa",
+        "linkedInProfile": "Ver perfil do LinkedIn",
+        "googlePlayStoreProfile": "Ver perfil do Google Play Store",
+        "gitHubProfile": "Ver perfil do GitHub",
+        "viewSourceCode": "Ver código-fonte",
+        "sendEmail": "Enviar e-mail",
+        "donations": {
+          "payPal": "Doar via PayPal",
+          "buyMeACoffee": "Doar via Buy Me a Coffee"
+        }
+      }
+    }
+  }
+}
