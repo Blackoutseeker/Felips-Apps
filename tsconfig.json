@@ -12,6 +12,7 @@
     },
     "target": "ES5",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["jest"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
