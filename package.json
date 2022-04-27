@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "jest:test": "jest",
+    "jest:watch": "jest --watch",
+    "jest:clear": "jest --clearCache"
   },
   "dependencies": {
     "next": "12.1.5",
