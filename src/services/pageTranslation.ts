@@ -28,8 +28,8 @@ export const getSeoTranslationForUserLocale = (
   locale: string | undefined,
   page: string
 ): SeoTranslation => {
-  if (locale) return require(`../locales/${page}/seo/${locale}.json`)
-  return require(`../locales/${page}/seo/en-US.json`)
+  if (locale) return require(`../locales/seo/${page}/${locale}.json`)
+  return require(`../locales/seo/${page}/en-US.json`)
 }
 
 /**
@@ -43,6 +43,6 @@ export const getContentTranslationForUserLocale = (
   locale: string | undefined,
   page: string
 ): ContentTranslation => {
-  if (locale) return require(`../locales/${page}/content/${locale}.json`)
-  return require(`../locales/${page}/content/en-US.json`)
+  if (locale) return require(`../locales/content/${page}/${locale}.json`)
+  return require(`../locales/content/${page}/en-US.json`)
 }
