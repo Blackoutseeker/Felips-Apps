@@ -1,0 +1,31 @@
+.searchBarContainer {
+  @apply hidden w-full max-w-[555px] h-[30px] py-[6px] px-[10px] mx-5;
+  @apply bg-background rounded-md md:flex;
+}
+
+.icon {
+  @apply fill-secondary;
+}
+
+.searchInput {
+  @apply w-full h-full mx-[10px] bg-transparent outline-none;
+  @apply text-white placeholder:text-secondary;
+}
+
+.clearButton {
+  @apply outline-none;
+}
+
+.openSearchButton {
+  @apply flex md:hidden;
+}
+
+.searchHeader {
+  @apply fixed top-0 left-0 flex justify-center items-center w-full;
+  @apply h-[60px] px-4 bg-primary border-b-[1px] border-b-secondary z-20;
+}
+
+.searchHeaderInput {
+  @apply w-full h-full mx-4 bg-transparent outline-none;
+  @apply text-white text-lg placeholder:text-secondary;
+}

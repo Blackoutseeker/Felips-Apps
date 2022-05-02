@@ -1,0 +1,37 @@
+.openDrawerButton {
+  @apply flex md:hidden;
+}
+
+.drawerContainer {
+  @apply fixed top-0 left-0 w-full h-full z-20;
+  @apply bg-background overflow-y-auto;
+}
+
+.drawerHeader {
+  @apply flex justify-center items-center h-[60px];
+  @apply px-4 bg-primary border-b-[1px] border-b-secondary;
+}
+
+.closeDrawerButton {
+  @apply absolute left-4;
+}
+
+.logo {
+  @apply text-white font-bold text-2xl min-w-max;
+}
+
+.socialMediasList {
+  @apply flex flex-col w-full;
+}
+
+.socialMediaItem {
+  @apply flex items-center w-full p-4;
+}
+
+.icon {
+  @apply fill-secondary;
+}
+
+.socialMediaText {
+  @apply text-secondary font-bold text-lg ml-4;
+}

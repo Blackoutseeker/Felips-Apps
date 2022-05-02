@@ -1,0 +1,23 @@
+.headerVisible {
+  @apply sticky top-0 flex justify-between items-center px-4;
+  @apply h-[60px] bg-primary border-b-[1px] border-b-secondary;
+  @apply duration-200 z-10 md:justify-between md:px-[70px];
+}
+
+.headerInvisible {
+  @apply sticky -top-[60px] flex justify-between items-center px-4;
+  @apply h-[60px] bg-primary border-b-[1px] border-b-secondary;
+  @apply duration-200 z-10 md:justify-between md:px-[70px];
+}
+
+.logo {
+  @apply text-white font-bold text-2xl min-w-max;
+}
+
+.socialMediasContainer {
+  @apply space-x-[40px] hidden md:flex;
+}
+
+.icon {
+  @apply fill-secondary duration-200 hover:fill-white;
+}
