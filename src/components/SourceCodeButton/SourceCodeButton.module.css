@@ -1,0 +1,12 @@
+.buttonWrapper {
+  @apply flex max-w-fit;
+}
+
+.sourceCodeButton {
+  @apply flex justify-between items-center min-w-[220px] h-[50px];
+  @apply bg-[#121212] px-[15px] rounded-lg;
+}
+
+.buttonText {
+  @apply min-w-max text-white font-bold mx-[15px];
+}
