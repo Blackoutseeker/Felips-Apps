@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
+import Head from 'next/head'
+import { Header } from '@components/index'
 
 const HomePage: NextPage = () => {
   const { locale } = useRouter()
@@ -21,6 +22,7 @@ const HomePage: NextPage = () => {
           content={`${seoTranslation.page.head.keywords}`}
         />
       </Head>
+      <Header />
     </main>
   )
 }
