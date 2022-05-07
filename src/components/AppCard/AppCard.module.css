@@ -1,0 +1,35 @@
+.appCardContainer {
+  @apply relative flex flex-col w-[280px] border-[1px] border-secondary;
+  @apply rounded-lg space-y-5 p-5 hover:shadow-md hover:bg-primary;
+  @apply hover:border-primary duration-150;
+}
+
+.appCardContainer:hover > .linkButton {
+  @apply bg-primary shadow-md;
+}
+
+.appLogoContainer {
+  @apply flex justify-between space-x-5 h-[100px];
+}
+
+.appNameText {
+  @apply flex flex-grow justify-center items-center max-w-[120px];
+  @apply text-white font-bold text-2xl overflow-hidden;
+}
+
+.appPresentationText {
+  @apply min-h-[70px] text-white text-base text-justify;
+}
+
+.buttonsContainer {
+  @apply flex justify-end w-full space-x-5;
+}
+
+.buttonIcon {
+  @apply fill-secondary hover:fill-white duration-150;
+}
+
+.linkButton {
+  @apply absolute -top-[45px] -right-[25px] flex justify-center items-center;
+  @apply w-[50px] h-[50px] bg-background rounded-full duration-150;
+}
