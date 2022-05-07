@@ -24,6 +24,9 @@ const HomePage: NextPage = () => {
         />
       </Head>
       <Header />
+      <div className={Styles.appsListWrapper}>
+        <ul className={Styles.appsList}></ul>
+      </div>
       <Footer />
     </main>
   )
