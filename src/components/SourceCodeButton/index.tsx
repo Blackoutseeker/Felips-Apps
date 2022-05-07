@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import type { FC } from 'react'
 import { useRouter } from 'next/router'
 import { getStaticTranslationForUserLocale } from '@services/pageTranslation'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'

@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image'
-import { ContentTranslation } from './index'
+import type { ContentTranslation } from './index'
 
 export type App = {
   name: string

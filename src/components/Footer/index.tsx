@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import type { FC } from 'react'
 import { useRouter } from 'next/router'
 import { SourceCodeButton } from '@components/index'
 import { getStaticTranslationForUserLocale } from '@services/pageTranslation'

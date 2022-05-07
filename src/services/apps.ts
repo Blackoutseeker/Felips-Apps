@@ -1,4 +1,4 @@
-import { App } from '@models/index'
+import type { App } from '@models/index'
 import { getContentTranslationForUserLocale } from '@services/pageTranslation'
 import LinekerLogo from '@assets/images/apps/Lineker.png'
 
