@@ -42,6 +42,7 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "27.5.1",
     "jest-cli": "27.5.1",
+    "jest-transform-stub": "^2.0.0",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
