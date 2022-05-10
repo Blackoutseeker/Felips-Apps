@@ -1,4 +1,5 @@
 import { FC, useState, useCallback, useEffect } from 'react'
+import type { App } from '@models/index'
 import { useRouter } from 'next/router'
 import { getStaticTranslationForUserLocale } from '@services/pageTranslation'
 import { Drawer, SearchBar } from '@components/index'
@@ -6,7 +7,11 @@ import Link from 'next/link'
 import { FaLinkedin, FaGooglePlay, FaGithub } from 'react-icons/fa'
 import Styles from './Header.module.css'
 
-export const Header: FC = () => {
+interface HeaderProps {
+  apps: App[]
+}
+
+export const Header: FC<HeaderProps> = ({ apps }) => {
   const { locale } = useRouter()
   const staticTranslation = getStaticTranslationForUserLocale(locale)
   const {
@@ -42,7 +47,7 @@ export const Header: FC = () => {
           Felip&apos;s Apps
         </a>
       </Link>
-      <SearchBar />
+      <SearchBar apps={apps} />
       <div className={Styles.socialMediasContainer}>
         <a
           href={process.env.LINKEDIN_PROFILE_URL!}

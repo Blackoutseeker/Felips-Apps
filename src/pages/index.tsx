@@ -29,7 +29,7 @@ const HomePage: NextPage = () => {
           content={`${seoTranslation.page.head.keywords}`}
         />
       </Head>
-      <Header />
+      <Header apps={apps} />
       <div className={Styles.appsListWrapper}>
         <ul className={Styles.appsList}>{renderAppCards()}</ul>
       </div>
