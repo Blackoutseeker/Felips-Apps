@@ -1,6 +1,10 @@
+.searchWrapper {
+  @apply relative hidden flex-col max-w-[555px] w-full mx-5 md:flex;
+}
+
 .searchBarContainer {
-  @apply hidden w-full max-w-[555px] h-[30px] py-[6px] px-[10px] mx-5;
-  @apply bg-background rounded-md md:flex;
+  @apply flex w-full h-[30px] py-[6px] px-[10px];
+  @apply bg-background rounded-md;
 }
 
 .icon {
