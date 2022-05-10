@@ -1,6 +1,7 @@
 export * from './Header'
 export * from './Drawer'
 export * from './SearchBar'
+export * from './SearchList'
 export * from './SourceCodeButton'
 export * from './Footer'
 export * from './AppCard'

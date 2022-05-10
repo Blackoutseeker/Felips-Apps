@@ -1,0 +1,49 @@
+.searchList {
+  @apply fixed top-[60px] left-0 w-full h-[calc(100%_-_60px)];
+  @apply bg-primary overflow-y-auto;
+  @apply md:absolute md:top-[45px] md:max-h-[370px] md:h-auto;
+  @apply md:border-[1px] md:border-t-0 md:border-secondary md:rounded-b-lg;
+}
+
+.searchList::-webkit-scrollbar {
+  @apply w-2 md:rounded-br-lg;
+}
+
+.searchList::-webkit-scrollbar-track {
+  @apply bg-primary md:rounded-br-lg;
+}
+
+.searchList::-webkit-scrollbar-thumb {
+  @apply bg-secondary md:rounded-b-full;
+}
+
+.appItem {
+  @apply flex items-center p-5 space-x-5 duration-300 hover:bg-background;
+}
+
+.appLogo {
+  @apply min-w-[100px] min-h-[100px];
+}
+
+.appInfo {
+  @apply flex flex-col flex-grow space-y-5 overflow-hidden;
+}
+
+.appNameText {
+  @apply text-white text-xl font-bold truncate;
+}
+
+.appPresentationText {
+  @apply text-white text-base;
+}
+
+.appPresentationText {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.divider {
+  @apply mx-5 border-secondary;
+}
