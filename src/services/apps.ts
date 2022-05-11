@@ -18,3 +18,19 @@ export const getApps = (locale: string | undefined): App[] => [
     content: getContentTranslationForUserLocale(locale, 'Lineker')
   }
 ]
+
+/**
+ * Get the app for the given name.
+ * @param appName - The name of the app to get.
+ * @param locale - The user's current `locale` (example: `en-US`).
+ * @returns {App | undefined} The app for the given name, or `undefined`.
+ */
+
+export const getApp = (
+  appName: string,
+  locale: string | undefined
+): App | undefined => {
+  const apps = getApps(locale)
+  const app = apps.find(app => app.name === appName)
+  return app
+}

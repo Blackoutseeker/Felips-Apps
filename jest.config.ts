@@ -3,7 +3,11 @@
  * https://jestjs.io/docs/configuration
  */
 
-export default {
+import NextJest from 'next/jest'
+
+const createJestConfig = NextJest({ dir: './' })
+
+const customJestConfig = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -108,7 +112,7 @@ export default {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: 'ts-jest',
+  // preset: 'ts-jest',
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -152,7 +156,7 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: 'jsdom',
+  // testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -167,7 +171,7 @@ export default {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
@@ -179,10 +183,10 @@ export default {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
-  transform: {
-    '^.+\\.(js|jsx|ts|tsx)?$': 'babel-jest',
-    '\\.(svg|png|jpg)$': 'jest-transform-stub'
-  },
+  // transform: {
+  //   '^.+\\.(js|jsx|ts|tsx)?$': 'babel-jest',
+  //   '\\.(svg|png|jpg)$': 'jest-transform-stub'
+  // },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
@@ -202,3 +206,5 @@ export default {
   // Whether to use watchman for file crawling
   watchman: true
 }
+
+export default createJestConfig(customJestConfig)
