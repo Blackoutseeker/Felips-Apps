@@ -19,7 +19,6 @@ const HomePage: NextPage = () => {
     <main className={Styles.pageContainer}>
       <Head>
         <title>Felip&apos;s Apps</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content={seoTranslation.page.head.description}
