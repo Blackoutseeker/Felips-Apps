@@ -1,6 +1,6 @@
 import type { App } from '@models/index'
 import { getContentTranslationForUserLocale } from '@services/pageTranslation'
-import LinekerIcon from '@assets/images/apps/Lineker.png'
+import LinekerIcon from '@assets/apps/Lineker/icon.png'
 
 /**
  * Get all apps available for the user.
