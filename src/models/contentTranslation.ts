@@ -5,7 +5,7 @@ export type ContentTranslation = {
   developmentText: string
   descriptionTitle: string
   descriptionText: string
-  screenshotText: string
+  screenshotTexts: string[]
   motivationTitle: string
   motivationText: string
 }

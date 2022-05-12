@@ -7,4 +7,5 @@ export type App = {
   sourceCodeUrl: string
   googlePlayUrl: string
   content: ContentTranslation
+  screenshots: StaticImageData[] | string[]
 }

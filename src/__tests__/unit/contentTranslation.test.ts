@@ -22,7 +22,7 @@ describe('Testing "getContentTranslationForUserLocale" method from "pageTranslat
       expect(contentTranslation.developmentText).toBeDefined()
       expect(contentTranslation.descriptionTitle).toBeDefined()
       expect(contentTranslation.descriptionText).toBeDefined()
-      expect(contentTranslation.screenshotText).toBeDefined()
+      expect(contentTranslation.screenshotTexts.length).toBeGreaterThan(0)
       expect(contentTranslation.motivationTitle).toBeDefined()
       expect(contentTranslation.motivationText).toBeDefined()
     })
