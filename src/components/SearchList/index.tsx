@@ -15,7 +15,7 @@ const AppItem: FC<AppItemProps> = ({ app }) => {
         <a className={Styles.appItem} title={app.name}>
           <div className={Styles.appLogo}>
             <Image
-              src={app.image}
+              src={app.icon}
               width={100}
               height={100}
               alt={app.name}

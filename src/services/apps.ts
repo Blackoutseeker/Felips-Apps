@@ -1,6 +1,6 @@
 import type { App } from '@models/index'
 import { getContentTranslationForUserLocale } from '@services/pageTranslation'
-import LinekerLogo from '@assets/images/apps/Lineker.png'
+import LinekerIcon from '@assets/images/apps/Lineker.png'
 
 /**
  * Get all apps available for the user.
@@ -11,7 +11,7 @@ import LinekerLogo from '@assets/images/apps/Lineker.png'
 export const getApps = (locale: string | undefined): App[] => [
   {
     name: 'Lineker',
-    image: LinekerLogo,
+    icon: LinekerIcon,
     sourceCodeUrl: 'https://github.com/Blackoutseeker/Lineker-Mobile-Flutter',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.lineker',

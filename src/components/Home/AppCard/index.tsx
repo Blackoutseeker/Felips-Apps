@@ -15,7 +15,7 @@ export const AppCard: FC<AppCardProps> = ({ app }) => {
       <Link href={`/${app.name}`} passHref>
         <a className={Styles.appLogoContainer} title={app.name}>
           <Image
-            src={app.image}
+            src={app.icon}
             width={100}
             height={100}
             alt={app.name}

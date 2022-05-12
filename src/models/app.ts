@@ -3,7 +3,7 @@ import type { ContentTranslation } from './index'
 
 export type App = {
   name: string
-  image: StaticImageData | string
+  icon: StaticImageData | string
   sourceCodeUrl: string
   googlePlayUrl: string
   content: ContentTranslation
