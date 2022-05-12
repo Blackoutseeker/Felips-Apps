@@ -16,7 +16,7 @@ export const Footer: FC = () => {
 
   return (
     <footer className={Styles.footer}>
-      <SourceCodeButton />
+      <SourceCodeButton href="https://github.com/Blackoutseeker/Felips-Apps" />
       <div className={Styles.emailContainer}>
         <a
           className={Styles.emailText}

@@ -4,7 +4,11 @@ import { getStaticTranslationForUserLocale } from '@services/pageTranslation'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import Styles from './SourceCodeButton.module.css'
 
-export const SourceCodeButton: FC = () => {
+interface SourceCodeButtonProps {
+  href: string
+}
+
+export const SourceCodeButton: FC<SourceCodeButtonProps> = ({ href }) => {
   const { locale } = useRouter()
   const staticTranslation = getStaticTranslationForUserLocale(locale)
   const {
@@ -16,7 +20,7 @@ export const SourceCodeButton: FC = () => {
   return (
     <a
       className={Styles.buttonWrapper}
-      href="https://github.com/Blackoutseeker/Felips-Apps"
+      href={href}
       target="_blank"
       rel="noreferrer"
       title={titles.viewSourceCode}
