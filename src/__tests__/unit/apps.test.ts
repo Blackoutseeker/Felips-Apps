@@ -1,6 +1,24 @@
 import { apps } from '@utils/constants'
 import { getApps, getApp } from '@services/apps'
 
+describe('Testing if have any duplicate apps', () => {
+  test('Should check if an app has been duplicated', () => {
+    let hasDuplication: boolean = false
+
+    apps.forEach(app => {
+      if (
+        apps.filter(
+          appFromFilter => appFromFilter.toLowerCase() === app.toLowerCase()
+        ).length > 1
+      ) {
+        hasDuplication = true
+      }
+    })
+
+    expect(hasDuplication).toBeFalsy()
+  })
+})
+
 const defaultLocale: string = 'en-US'
 
 describe('Testing "getApps" method from "apps" module', () => {
