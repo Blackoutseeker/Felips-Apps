@@ -1,9 +1,11 @@
 import { StaticImageData } from 'next/image'
+import { Framework } from '@utils/constants'
 import type { ContentTranslation } from './index'
 
 export type App = {
   name: string
   icon: StaticImageData | string
+  framework: Framework
   sourceCodeUrl: string
   googlePlayUrl: string
   content: ContentTranslation
