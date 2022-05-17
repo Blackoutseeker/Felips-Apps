@@ -17,4 +17,13 @@ describe('Testing texts and images from apps screenshots', () => {
       })
     })
   })
+
+  test('Should check if each app have 1 or more screenshots', () => {
+    const defaultLocale = 'en-US'
+    const apps = getApps(defaultLocale)
+    apps.forEach(app => {
+      const { screenshots } = app
+      expect(screenshots.length).toBeGreaterThan(0)
+    })
+  })
 })
