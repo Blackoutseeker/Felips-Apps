@@ -1,0 +1,8 @@
+.phoneViewContainer {
+  @apply relative flex justify-center min-w-[260px] bg-black border-secondary border-[1px] px-[20px];
+  @apply pt-[40px] pb-[60px] rounded-3xl;
+}
+
+.phoneButton {
+  @apply absolute bottom-5 w-16 h-6 border-secondary border-[1px] rounded-full;
+}
