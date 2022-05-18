@@ -56,6 +56,11 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
             bodyText={app.content.descriptionText}
           />
           {renderScreenshots}
+          <Section
+            title={app.content.motivationTitle}
+            bodyText={app.content.motivationText}
+            isMotivation
+          />
         </article>
       </div>
       <Footer />
