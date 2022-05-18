@@ -4,7 +4,14 @@ import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApp, getApps } from '@services/apps'
 import Head from 'next/head'
-import { Header, Banner, Section, Screenshot, Footer } from '@components/index'
+import {
+  Header,
+  Banner,
+  Section,
+  Screenshot,
+  SectionFooter,
+  Footer
+} from '@components/index'
 import Styles from '@styles/Page.module.css'
 
 interface AppPageProps {
@@ -60,6 +67,11 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
             title={app.content.motivationTitle}
             bodyText={app.content.motivationText}
             isMotivation
+          />
+          <SectionFooter
+            googlePlayStoreUrl={app.googlePlayUrl}
+            storeButtonTitle={app.content.viewOnGooglePlayStore}
+            sourceCodeUrl={app.sourceCodeUrl}
           />
         </article>
       </div>
