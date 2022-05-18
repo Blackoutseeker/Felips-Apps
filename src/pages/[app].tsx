@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApp, getApps } from '@services/apps'
 import Head from 'next/head'
-import { Header, Banner, Section, Footer } from '@components/index'
+import { Header, Banner, Section, Screenshot, Footer } from '@components/index'
 import Styles from '@styles/Page.module.css'
 
 interface AppPageProps {
@@ -16,6 +16,18 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
   const seoTranslation = getSeoTranslationForUserLocale(locale, app.name)
 
   const apps = getApps(locale)
+
+  const renderScreenshots = app.screenshots.map((screenshot, index: number) => {
+    const screenshotText = app.content.screenshotTexts[index]
+    return (
+      <Screenshot
+        key={screenshotText}
+        screenshotText={screenshotText}
+        screenshotImage={screenshot}
+        isReverse={index % 2 !== 0}
+      />
+    )
+  })
 
   return (
     <main className={Styles.pageContainer}>
@@ -43,6 +55,7 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
             title={app.content.descriptionTitle}
             bodyText={app.content.descriptionText}
           />
+          {renderScreenshots}
         </article>
       </div>
       <Footer />

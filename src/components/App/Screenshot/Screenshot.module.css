@@ -1,0 +1,12 @@
+.screenshotContainer {
+  @apply flex flex-col items-center my-5 md:flex-row md:space-x-10;
+}
+
+.screenshotReverseContainer {
+  @apply flex flex-col justify-end items-center my-5;
+  @apply md:flex-row-reverse md:space-x-reverse md:space-x-10;
+}
+
+.screenshotText {
+  @apply text-white text-xl text-justify w-full mb-10;
+}
