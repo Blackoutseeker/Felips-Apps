@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApp, getApps } from '@services/apps'
 import Head from 'next/head'
-import { Header, Footer } from '@components/index'
+import { Header, Banner, Footer } from '@components/index'
 import Styles from '@styles/Page.module.css'
 
 interface AppPageProps {
@@ -32,7 +32,14 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
       </Head>
       <Header apps={apps} />
       <div className={Styles.appsListWrapper}>
-        <article className={Styles.appArticleContainer}></article>
+        <article className={Styles.appArticleContainer}>
+          <Banner
+            appIcon={app.icon}
+            appName={app.name}
+            appFramework={app.framework}
+            appDevelopmentText={app.content.developmentText}
+          />
+        </article>
       </div>
       <Footer />
     </main>

@@ -1,0 +1,31 @@
+.bannerContainer {
+  @apply flex flex-wrap justify-center items-center w-full;
+}
+
+.logoContainer {
+  @apply flex flex-grow items-center;
+}
+
+.iconContainer {
+  @apply relative min-w-[100px] min-h-[100px] md:w-[150px] md:h-[150px];
+}
+
+.appNameText {
+  @apply text-white font-bold text-2xl ml-10 md:text-3xl md:mx-10;
+}
+
+.developmentContainer {
+  @apply flex flex-col justify-center h-[150px] space-y-[15px];
+}
+
+.developmentText {
+  @apply text-white font-bold text-xl;
+}
+
+.developmentLogo {
+  @apply flex items-center space-x-[15px];
+}
+
+.frameworkText {
+  @apply text-white font-bold text-lg;
+}
