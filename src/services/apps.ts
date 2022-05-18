@@ -1,5 +1,6 @@
 import type { App } from '@models/index'
 import { getContentTranslationForUserLocale } from '@services/pageTranslation'
+import { Framework } from '@utils/constants'
 import LinekerIcon from '@assets/apps/Lineker/icon.png'
 
 /**
@@ -15,7 +16,12 @@ export const getApps = (locale: string | undefined): App[] => [
     sourceCodeUrl: 'https://github.com/Blackoutseeker/Lineker-Mobile-Flutter',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.lineker',
-    content: getContentTranslationForUserLocale(locale, 'Lineker')
+    framework: Framework.Flutter,
+    content: getContentTranslationForUserLocale(locale, 'Lineker'),
+    screenshots: [
+      'https://play-lh.googleusercontent.com/nfESY0y7g43pUuj9eV5KYFPA5JyQ_tosc34lyg4e-RfTJgsyb2y5kYovFfl264QYRpc=w720-h310-rw',
+      'https://play-lh.googleusercontent.com/hYbYK3GQAlTE4fFYCwm1K5jjX6M2kofkWH_gCSvPnLxexO-WKyibT6Ni2jXp7nhDTQ18=w720-h310-rw'
+    ]
   }
 ]
 
