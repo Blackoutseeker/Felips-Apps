@@ -1,5 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
-import type { App } from '@models/index'
+import type { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApp, getApps } from '@services/apps'
@@ -12,16 +11,18 @@ import {
   SectionFooter,
   Footer
 } from '@components/index'
+import { apps as appPages, locales } from '@utils/constants'
 import Styles from '@styles/Page.module.css'
 
 interface AppPageProps {
-  app: App
+  appName: string
 }
 
-const AppPage: NextPage<AppPageProps> = ({ app }) => {
+const AppPage: NextPage<AppPageProps> = ({ appName }) => {
   const { locale } = useRouter()
-  const seoTranslation = getSeoTranslationForUserLocale(locale, app.name)
+  const seoTranslation = getSeoTranslationForUserLocale(locale, appName)
 
+  const app = getApp(appName, locale)!
   const apps = getApps(locale)
 
   const renderScreenshots = app.screenshots.map((screenshot, index: number) => {
@@ -80,15 +81,31 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async context => {
-  const appName = context.query.app?.toString()
-  if (appName) {
-    const app = getApp(appName, context.locale)
-    if (app) {
-      return {
-        props: {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: { params: { app: string }; locale: string }[] = []
+  appPages.forEach(app => {
+    locales.forEach(locale => {
+      paths.push({
+        params: {
           app
-        }
+        },
+        locale
+      })
+    })
+  })
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps: GetStaticProps = async context => {
+  const appName = context.params?.app?.toString()
+  if (appName) {
+    return {
+      props: {
+        appName
       }
     }
   }
