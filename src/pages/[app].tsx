@@ -31,6 +31,9 @@ const AppPage: NextPage<AppPageProps> = ({ app }) => {
         />
       </Head>
       <Header apps={apps} />
+      <div className={Styles.appsListWrapper}>
+        <article className={Styles.appArticleContainer}></article>
+      </div>
       <Footer />
     </main>
   )
