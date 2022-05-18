@@ -1,0 +1,19 @@
+.sectionContainer {
+  @apply flex flex-col my-5;
+}
+
+.title {
+  @apply text-white font-bold text-3xl my-5;
+}
+
+.bodyText {
+  @apply text-white text-2xl text-justify;
+}
+
+.motivationText {
+  @apply text-white text-2xl text-justify italic;
+}
+
+.quote {
+  @apply text-white font-bold text-[40px] text-justify;
+}
