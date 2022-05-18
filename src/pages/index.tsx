@@ -1,5 +1,4 @@
-import type { NextPage, GetStaticProps } from 'next'
-import type { App } from '@models/index'
+import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApps } from '@services/apps'
@@ -7,13 +6,11 @@ import Head from 'next/head'
 import { Header, AppCard, Footer } from '@components/index'
 import Styles from '@styles/Page.module.css'
 
-interface HomePageProps {
-  apps: App[]
-}
-
-const HomePage: NextPage<HomePageProps> = ({ apps }) => {
+const HomePage: NextPage = () => {
   const { locale } = useRouter()
   const seoTranslation = getSeoTranslationForUserLocale(locale, 'home')
+
+  const apps = getApps(locale)
 
   const renderAppCards = () =>
     apps.map(app => <AppCard key={app.name} app={app} />)
@@ -38,16 +35,6 @@ const HomePage: NextPage<HomePageProps> = ({ apps }) => {
       <Footer />
     </main>
   )
-}
-
-export const getStaticProps: GetStaticProps = async context => {
-  const locale = context.locale ?? 'en-US'
-  const apps = getApps(locale)
-  return {
-    props: {
-      apps
-    }
-  }
 }
 
 export default HomePage
