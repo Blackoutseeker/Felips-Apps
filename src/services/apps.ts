@@ -55,6 +55,19 @@ export const getApps = (locale: string | undefined): App[] => [
       'https://play-lh.googleusercontent.com/buNjM8PCPtImkRBkH16OC2gDW5-t-qrP0jauylwCUPz7hEmb3uxyU6_ksp_YyTn_cTw=w720-h310-rw',
       'https://play-lh.googleusercontent.com/mt9-M-3qKrglHbSJcHTXBZN6TM0P1RupHZxu6ieH8_mtkxgCu-vwYSg9qHUsg6_vnQ=w720-h310-rw'
     ]
+  },
+  {
+    name: 'Mister',
+    icon: getStaticAppIcon('Mister'),
+    sourceCodeUrl: 'https://github.com/Blackoutseeker/Mister',
+    googlePlayUrl:
+      'https://play.google.com/store/apps/details?id=com.FelipsTudio.mister',
+    framework: Framework.Flutter,
+    content: getContentTranslationForUserLocale(locale, 'Mister'),
+    screenshots: [
+      'https://play-lh.googleusercontent.com/UIm6PbNCoVn-BzjuiDCZsGDrY8Ig0sFiCKVr2u2z2BI8v_yWC-d_gGhnCjvTxPJNzJE=w720-h310-rw',
+      'https://play-lh.googleusercontent.com/IPDy3Cye2fWG3to39-LQCsgsvwv1R7311rDluVa6QdnpzXIYAsGe4qBJDjCPKB57HIw=w720-h310-rw'
+    ]
   }
 ]
 
