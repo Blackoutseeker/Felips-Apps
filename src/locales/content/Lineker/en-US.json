@@ -2,10 +2,13 @@
   "presentationText": "Want to pass a link from your smartphone to your PC? This app was made for that!",
   "viewOnGooglePlayStore": "View on Google Play Store",
   "viewSourceCode": "View source code",
-  "developmentText": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  "descriptionTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  "descriptionText": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  "screenshotText": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  "motivationTitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-  "motivationText": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+  "developmentText": "Developed with",
+  "descriptionTitle": "Description",
+  "descriptionText": "Lineker allows you to manage links between your desktop and smartphone in real time, saving and deleting at any time. Create filters to organize your links; view, save and share QR codes. Scan QR codes and open their contents in a browser quickly and easily.",
+  "screenshotTexts": [
+    "See links being transferred between your smartphone and PC in real time, browse through filters created by yourself, and access your link history if you want to review any or permanently delete them.",
+    "Each link generates its own QR code automatically. You can save it to your photo gallery, or share it as an image. It is also possible to scan QR codes, taking advantage of the same features mentioned."
+  ],
+  "motivationTitle": "Motivation",
+  "motivationText": "I've always used impractical methods to pass a link from my smartphone to my PC and vice versa, like writing a draft in Gmail containing the link I wanted to open on a certain device. From this problem, I decided to develop an app just for this purpose, thinking about scalability."
 }
