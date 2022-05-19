@@ -1,0 +1,14 @@
+{
+  "presentationText": "Scan and create QR Codes on your smartphone.",
+  "viewOnGooglePlayStore": "View on Google Play Store",
+  "viewSourceCode": "View source code",
+  "developmentText": "Developed with",
+  "descriptionTitle": "Description",
+  "descriptionText": "Scan QR Codes, create and save yours! It is also possible to scan QR Codes inside your photo gallery!",
+  "screenshotTexts": [
+    "When you open the app, you will be able to scan a QR code, quickly and easily. After scanning, you can copy the text, or open it if it's a link. You can also change the camera, turn on the flash, and scan a QR code from your photo gallery.",
+    "You can create your own QR code, just type whatever you want! You can see QR code changes in real time as you type. Save it to your photo gallery when you're done typing."
+  ],
+  "motivationTitle": "Motivation",
+  "motivationText": "On older smartphone models, it was not possible to scan a QR code natively by the camera, so users had to install an app just for that, which was my case. Instead of downloading an app for this purpose, I decided to develop my own QR code scanner, with the aim of expanding my Android app development skills, as well as making it public to a large part of the world."
+}
