@@ -1,0 +1,14 @@
+{
+  "presentationText": "A virtual library app, to get copies of physical and digital books.",
+  "viewOnGooglePlayStore": "View on Google Play Store",
+  "viewSourceCode": "View source code",
+  "developmentText": "Developed with",
+  "descriptionTitle": "Description",
+  "descriptionText": "Bookep is an app aimed at students of the E.E.E.P. Irmã Ana Zélia da Fonseca, Milagres - CE, Brazil. It is now possible to borrow books from the library digitally, and download digital books! Track book return date, renew, access course handouts, write reviews, rate books, add new books, view pending returns, and more!",
+  "screenshotTexts": [
+    "It's possible to filter books by a certain genre, and search by titles. All books have a rating system, which students themselves can rate books with up to 5 stars and write reviews about them. Physical books can be borrowed directly from the library, and digital books can be downloaded to be available offline.",
+    "The app provides all the student course handouts, helping in the learning process of their technical course. There is also a ranking system that shows which students have the most affinity for reading."
+  ],
+  "motivationTitle": "Motivation",
+  "motivationText": "My high school had a library with several titles, and it was difficult to find a specific book. In addition, everything was recorded on paper, in a notebook with the names of more than 400 students. I developed this app in order to facilitate and automate library management, in addition to encouraging the practice of reading for the student audience."
+}
