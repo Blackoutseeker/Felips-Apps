@@ -68,6 +68,19 @@ export const getApps = (locale: string | undefined): App[] => [
       'https://play-lh.googleusercontent.com/UIm6PbNCoVn-BzjuiDCZsGDrY8Ig0sFiCKVr2u2z2BI8v_yWC-d_gGhnCjvTxPJNzJE=w720-h310-rw',
       'https://play-lh.googleusercontent.com/IPDy3Cye2fWG3to39-LQCsgsvwv1R7311rDluVa6QdnpzXIYAsGe4qBJDjCPKB57HIw=w720-h310-rw'
     ]
+  },
+  {
+    name: 'Bookep',
+    icon: getStaticAppIcon('Bookep'),
+    sourceCodeUrl: 'https://github.com/Blackoutseeker/EEEP-README',
+    googlePlayUrl:
+      'https://play.google.com/store/apps/details?id=com.FelipsTudio.bookep',
+    framework: Framework.ReactNative,
+    content: getContentTranslationForUserLocale(locale, 'Bookep'),
+    screenshots: [
+      'https://play-lh.googleusercontent.com/i6yaa1ayFwNLQIrVlekwWNeq9-_zv_EZsFhCSoztAV0wLiVXmdwTHpa7qwG4MiQjCKk=w720-h310-rw',
+      'https://play-lh.googleusercontent.com/XWaOzOKSc0hS39IQOTICXzlDvJvfGPzyx6v6XqQOzMA7O1w9v7hWzdjcpvxSimn4cg=w720-h310-rw'
+    ]
   }
 ]
 
