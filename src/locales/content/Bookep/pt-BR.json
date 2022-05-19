@@ -1,0 +1,14 @@
+{
+  "presentationText": "Um aplicativo de biblioteca virtual, para obter cópias de livros físicos e digitais.",
+  "viewOnGooglePlayStore": "Ver no Google Play Store",
+  "viewSourceCode": "Ver código-fonte",
+  "developmentText": "Desenvolvido com",
+  "descriptionTitle": "Descrição",
+  "descriptionText": "Bookep é um aplicativo destinado aos alunos da escola E.E.E.P. Irmã Ana Zélia da Fonseca, Milagres - CE. Agora é possível pegar livros emprestados da biblioteca de forma digital, e baixar livros digitais! Acompanhe a data de devolução do livro, faça renovações, acesse apostilas do seu curso, escreva resenhas, avalie livros, adicione novos livros, visualize devoluções pendentes e muito mais!",
+  "screenshotTexts": [
+    "É possível filtrar livros por determinado gênero, e pesquisar por títulos. Todos os livros contam com um sistema de avaliações, o qual os próprios alunos podem avaliar livros com até 5 estrelas e escrever resenhas sobre eles. Livros físicos podem ser emprestados diretamente da biblioteca, e livros digitais podem ser baixados para ficarem disponíveis offline.",
+    "O aplicativo disponibiliza todas as apostilas do curso do aluno, auxiliando no processo de aprendizagem de seu curso técnico. Também existe um sistema de ranking que exibe quais alunos possuem mais afinidade com a leitura."
+  ],
+  "motivationTitle": "Motivação",
+  "motivationText": "Minha escola do ensino médio possuía uma biblioteca com diversos títulos, e era difícil encontrar um livro em específico. Além disso, tudo era registrado em papel, em um caderno com os nomes de mais de 400 alunos. Desenvolvi este aplicativo com a finalidade de facilitar e automatizar o gerenciamento da biblioteca, além de incentivar a prática da leitura para o público estudantil."
+}
