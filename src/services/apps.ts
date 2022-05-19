@@ -42,6 +42,19 @@ export const getApps = (locale: string | undefined): App[] => [
       'https://play-lh.googleusercontent.com/nfESY0y7g43pUuj9eV5KYFPA5JyQ_tosc34lyg4e-RfTJgsyb2y5kYovFfl264QYRpc=w720-h310-rw',
       'https://play-lh.googleusercontent.com/hYbYK3GQAlTE4fFYCwm1K5jjX6M2kofkWH_gCSvPnLxexO-WKyibT6Ni2jXp7nhDTQ18=w720-h310-rw'
     ]
+  },
+  {
+    name: 'Qr Coder',
+    icon: getStaticAppIcon('Qr Coder'),
+    sourceCodeUrl: 'https://github.com/Blackoutseeker/QrCoder-Flutter',
+    googlePlayUrl:
+      'https://play.google.com/store/apps/details?id=com.FelipsTudio.qrcoder',
+    framework: Framework.Flutter,
+    content: getContentTranslationForUserLocale(locale, 'Qr Coder'),
+    screenshots: [
+      'https://play-lh.googleusercontent.com/buNjM8PCPtImkRBkH16OC2gDW5-t-qrP0jauylwCUPz7hEmb3uxyU6_ksp_YyTn_cTw=w720-h310-rw',
+      'https://play-lh.googleusercontent.com/mt9-M-3qKrglHbSJcHTXBZN6TM0P1RupHZxu6ieH8_mtkxgCu-vwYSg9qHUsg6_vnQ=w720-h310-rw'
+    ]
   }
 ]
 
