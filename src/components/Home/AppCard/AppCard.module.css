@@ -22,7 +22,7 @@
 }
 
 .buttonsContainer {
-  @apply flex justify-end w-full space-x-5;
+  @apply flex flex-grow items-end justify-end w-full space-x-5;
 }
 
 .buttonIcon {
