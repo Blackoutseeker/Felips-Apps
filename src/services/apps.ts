@@ -1,7 +1,27 @@
+import type { StaticImageData } from 'next/image'
 import type { App } from '@models/index'
 import { getContentTranslationForUserLocale } from '@services/pageTranslation'
 import { Framework } from '@utils/constants'
-import LinekerIcon from '@assets/apps/Lineker/icon.png'
+
+/**
+ * Get the static app icon for the given app name.
+ * @param appName - The name of the app to get the icon for.
+ * @returns {StaticImageData} The icon for the app.
+ */
+
+const getStaticAppIcon = (appName: string): StaticImageData => {
+  const appIcon:
+    | StaticImageData
+    | undefined = require(`@assets/apps/${appName}/icon.png`)
+
+  if (!appIcon) {
+    throw new Error(
+      `App icon not found for ${appName}, on <root>/src/assets/apps/${appName}/icon.png`
+    )
+  }
+
+  return appIcon
+}
 
 /**
  * Get all apps available for the user.
@@ -12,7 +32,7 @@ import LinekerIcon from '@assets/apps/Lineker/icon.png'
 export const getApps = (locale: string | undefined): App[] => [
   {
     name: 'Lineker',
-    icon: LinekerIcon,
+    icon: getStaticAppIcon('Lineker'),
     sourceCodeUrl: 'https://github.com/Blackoutseeker/Lineker-Mobile-Flutter',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.lineker',
