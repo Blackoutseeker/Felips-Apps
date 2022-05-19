@@ -1,0 +1,14 @@
+{
+  "presentationText": "An app to give more visibility to self-employed professionals.",
+  "viewOnGooglePlayStore": "View on Google Play Store",
+  "viewSourceCode": "View source code",
+  "developmentText": "Developed with",
+  "descriptionTitle": "Description",
+  "descriptionText": "Mister is an app for the community of self-employed professionals in the city of Milagres - CE, Brazil. With it, you can gain more visibility for your work as a self-employed professional, or find someone who offers a certain service you need.",
+  "screenshotTexts": [
+    "The app lists all self-employed professionals registered in the database, organizing them according to their profession. It is possible to search for professionals by their name and profession, in addition to directly viewing their location, allowing a contractor to check which ones are closest to him, facilitating the process of hiring services.",
+    "Each self-employed professional has their own profile within the app, displaying their photo, name, profession, address, phone number, email address and social networks."
+  ],
+  "motivationTitle": "Motivation",
+  "motivationText": "As part of the process of completing my Computer Technician Course, it was necessary to solve some problem seen in the daily life of society. I had the idea of developing an application that would facilitate the connection between people who needed to do or request a certain type of service."
+}
