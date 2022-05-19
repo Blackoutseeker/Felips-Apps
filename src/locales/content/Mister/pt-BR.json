@@ -1,0 +1,14 @@
+{
+  "presentationText": "Um aplicativo para dar mais visibilidade aos profissionais autônomos da cidade de Milagres - CE.",
+  "viewOnGooglePlayStore": "Ver no Google Play Store",
+  "viewSourceCode": "Ver código-fonte",
+  "developmentText": "Desenvolvido com",
+  "descriptionTitle": "Descrição",
+  "descriptionText": "Mister é um aplicativo destinado à comunidade de profissionais autônomos da cidade de Milagres - CE. Com ele, é possível ganhar mais visibilidade pelo seu trabalho como profissional autônomo, ou encontrar alguém que ofereça determinado serviço que você esteja precisando.",
+  "screenshotTexts": [
+    "O aplicativo lista todos os profissionais autônomos cadastrados no banco de dados, organizando-os conforme sua profissão. É possível pesquisar por autônomos pelo seu nome e profissão, além de visualizar diretamente sua localidade, possibilitando que um contratante confira quais se encontram mais próximos dele, facilitando o processo de contratação de serviços.",
+    "Cada autônomo possui seu próprio perfil dentro do aplicativo, exibindo sua foto, nome, profissão, endereço, número de telefone, endereço de e-mail e redes sociais."
+  ],
+  "motivationTitle": "Motivação",
+  "motivationText": "Como parte do processo de conclusão do meu Curso Técnico em Informática, era necessário solucionar algum problema visto no cotidiano da sociedade. Tive a ideia de desenvolver um aplicativo que facilitasse a conexão entre pessoas que necessitassem fazer ou requisitar determinado tipo de serviço."
+}
