@@ -19,11 +19,11 @@ export default class AppDocument extends Document {
           <meta name="author" content="Felipe Pereira de Souza Silva" />
           <meta
             property="og:image"
-            content="https://raw.githubusercontent.com/Blackoutseeker/Felips-Apps/main/public/favicon.ico"
+            content="https://raw.githubusercontent.com/Blackoutseeker/Felips-Apps/main/src/assets/images/favicon.png"
           />
           <meta
             property="og:image:secure_url"
-            content="https://raw.githubusercontent.com/Blackoutseeker/Felips-Apps/main/public/favicon.ico"
+            content="https://raw.githubusercontent.com/Blackoutseeker/Felips-Apps/main/src/assets/images/favicon.png"
           />
           <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="80" />
