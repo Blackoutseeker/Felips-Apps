@@ -1,0 +1,14 @@
+{
+  "presentationText": "Escaneie e crie QR Codes em seu smartphone.",
+  "viewOnGooglePlayStore": "Ver no Google Play Store",
+  "viewSourceCode": "Ver código-fonte",
+  "developmentText": "Desenvolvido com",
+  "descriptionTitle": "Descrição",
+  "descriptionText": "Escaneie QR Codes, crie e salve o seu! Também é possível escanear QR Codes dentro da sua galeria de fotos!",
+  "screenshotTexts": [
+    "Ao abrir o aplicativo, você já estará apto a escanear um QR code, de forma rápida e fácil. Após escanear, você pode copiar o texto, ou abri-lo caso seja um link. Você também pode trocar a câmera, ligar o flash, e escanear um QR code da sua galeria de fotos.",
+    "Você pode criar seu próprio QR code, basta digitar o que você quiser! É possível ver as alterações no QR code em tempo real enquanto você digita. Salve-o em sua galeria de fotos quando terminar de digitar."
+  ],
+  "motivationTitle": "Motivação",
+  "motivationText": "Em modelos de smartphones mais antigos, não era possível escanear um QR code de forma nativa pela câmera, logo, os usuários deveriam instalar um aplicativo apenas para isso, que foi o meu caso. Ao invés de baixar um aplicativo para tal finalidade, decidi desenvolver o meu próprio escaneador de QR codes, com o objetivo de expandir minhas habilidades de desenvolvimento de aplicativos para Android, além de torná-lo público para boa parte do mundo."
+}
