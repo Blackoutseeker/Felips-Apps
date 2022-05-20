@@ -9,7 +9,9 @@
     "lint": "next lint",
     "jest:test": "jest",
     "jest:watch": "jest --watch",
-    "jest:clear": "jest --clearCache"
+    "jest:clear": "jest --clearCache",
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css}\"",
+    "prettier:format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
   },
   "dependencies": {
     "next": "12.1.5",
