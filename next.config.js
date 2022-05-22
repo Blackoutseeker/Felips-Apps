@@ -18,7 +18,13 @@ const nextConfig = {
     PUBLISHER_ID: process.env.PUBLISHER_ID,
     RELATIONSHIP_TYPE: process.env.RELATIONSHIP_TYPE,
     CERTIFICATION_AUTHORITY: process.env.CERTIFICATION_AUTHORITY
-  }
+  },
+  rewrites: async () => [
+    {
+      source: '/app-ads.txt',
+      destination: '/api/app-ads'
+    }
+  ]
 }
 
 module.exports = nextConfig
