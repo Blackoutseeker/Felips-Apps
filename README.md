@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Felip&apos;s Apps
+​
+<p align="center">
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/56811005/173232988-37ee1665-0526-4672-8620-48dcfaf68e19.png" height="200">
 
-First, run the development server:
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Jest](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Run%20Jest%20tests?label=Jest%20tests)
+![ESLint](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Check%20code%20with%20ESLint?label=ESLint%20code%20check)
+![Prettier](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Check%20code%20style%20with%20Prettier?label=Prettier%20code%20style)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### A website dedicated to showing my work as a mobile developer. All the mobile apps created by me are on this site, and through it you can see how the development of each one contributed to my career as a software developer.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Development environment
 
-## Learn More
+### IDE
 
-To learn more about Next.js, take a look at the following resources:
+<img src="https://user-images.githubusercontent.com/56811005/85485907-0ca8b800-b5a0-11ea-96b1-dd6ad670c7ac.png" width="250" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img src="https://user-images.githubusercontent.com/56811005/173235738-afe61fc9-e8c5-42ad-8a8c-7dce4a8bcf2c.png" width="700" />
 
-## Deploy on Vercel
+### Tests framework
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="https://user-images.githubusercontent.com/56811005/128603360-14b0ec36-9a8d-43f5-ae18-929d9edd7cf5.png" width="700" >
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Linting and code formatter
+
+<img src="https://user-images.githubusercontent.com/56811005/126252695-0b44f690-6f08-44ea-ac5c-8118261df002.png" width="700" >
+
+### Package Manager
+
+<img src="https://user-images.githubusercontent.com/56811005/173235948-6789e29c-6d24-4810-87d0-be994c91727c.png" width="700" >
+
+### User Interface Prototyping
+
+<img src="https://user-images.githubusercontent.com/56811005/173236071-312e89b9-f53b-424b-910a-86148c76d7ce.png" width="700" >
+
+### Version Control Systems
+
+<img src="https://user-images.githubusercontent.com/56811005/103469908-d5367780-4d49-11eb-8c56-db348eff1989.png" width="700" >
