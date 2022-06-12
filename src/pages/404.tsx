@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { getApps } from '@services/apps'
 import Head from 'next/head'
-import { Header, Footer } from '@components/index'
+import { Header, Message404, Footer } from '@components/index'
 import Styles from '@styles/Page.module.css'
 
 const Page404: NextPage = () => {
@@ -15,6 +15,7 @@ const Page404: NextPage = () => {
         <title>Felip&apos;s Apps</title>
       </Head>
       <Header apps={apps} />
+      <Message404 />
       <Footer />
     </main>
   )
