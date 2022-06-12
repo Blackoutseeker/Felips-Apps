@@ -2,6 +2,7 @@
   "page": {
     "body": {
       "searchInputPlaceholder": "Search apps",
+      "message404": "Error 404: App not found",
       "titles": {
         "goToHomePage": "Go to home page",
         "clearSearchInput": "Clear search input",
