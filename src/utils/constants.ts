@@ -1,4 +1,11 @@
-export const locales = ['en-US', 'pt-BR']
+export const localizations = {
+  'en-US': 'English (US)',
+  'pt-BR': 'Português (Brasil)'
+}
+
+export const languages = Object.values(localizations)
+
+export const locales = Object.keys(localizations)
 
 export enum Framework {
   Flutter = 'Flutter',
