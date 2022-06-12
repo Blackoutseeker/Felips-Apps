@@ -3,6 +3,7 @@ import type { App } from '@models/index'
 import { useRouter } from 'next/router'
 import { getStaticTranslationForUserLocale } from '@services/pageTranslation'
 import { FaSearch, FaTimes, FaArrowLeft } from 'react-icons/fa'
+import OutsideClickHandler from 'react-outside-click-handler'
 import { SearchList } from '@components/index'
 import Styles from './SearchBar.module.css'
 
@@ -44,6 +45,10 @@ export const SearchBar: FC<SearchBarProps> = ({ apps }) => {
     clearSearchInput()
   }
 
+  const closeSearchList = () => {
+    setSearchText('')
+  }
+
   const filterAppBySearchText = (app: App): boolean => {
     const appName = app.name.toLowerCase()
     const search = searchText.toLowerCase()
@@ -78,7 +83,11 @@ export const SearchBar: FC<SearchBarProps> = ({ apps }) => {
             <FaTimes className={Styles.icon} size={15} />
           </button>
         </div>
-        {showSearchList && <SearchList apps={filteredApps} />}
+        {showSearchList && (
+          <OutsideClickHandler onOutsideClick={closeSearchList}>
+            <SearchList apps={filteredApps} />
+          </OutsideClickHandler>
+        )}
       </div>
       {!isSearching ? (
         <button
