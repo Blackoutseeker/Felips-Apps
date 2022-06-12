@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
 import { useRouter } from 'next/router'
 import { getStaticTranslationForUserLocale } from '@services/pageTranslation'
+import { locales, languages } from '@utils/constants'
 import {
   FaBars,
   FaTimes,
@@ -9,10 +10,11 @@ import {
   FaGithub
 } from 'react-icons/fa'
 import Link from 'next/link'
+import { HiTranslate } from 'react-icons/hi'
 import Styles from './Drawer.module.css'
 
 export const Drawer: FC = () => {
-  const { locale } = useRouter()
+  const { locale, push, asPath } = useRouter()
   const staticTranslation = getStaticTranslationForUserLocale(locale)
   const {
     page: {
@@ -25,6 +27,28 @@ export const Drawer: FC = () => {
   const handleDrawerToggle = () => {
     setIsDrawerOpen(!isDrawerOpen)
   }
+
+  const changeLocale = async (locale: string) => {
+    await push(asPath, undefined, {
+      locale,
+      scroll: false,
+      shallow: true
+    }).then(handleDrawerToggle)
+  }
+
+  const renderLanguageItems = () =>
+    locales.map((locale, index) => {
+      const language = languages[index]
+      return (
+        <li
+          key={locale}
+          className={Styles.listItem}
+          onClick={() => changeLocale(locale)}
+        >
+          {language}
+        </li>
+      )
+    })
 
   if (!isDrawerOpen) {
     return (
@@ -48,18 +72,16 @@ export const Drawer: FC = () => {
           </a>
         </Link>
       </header>
-      <ul className={Styles.socialMediasList}>
+      <ul className={Styles.buttonsList}>
         <li>
           <a
             href={process.env.LINKEDIN_PROFILE_URL!}
             target="_blank"
             rel="noreferrer"
-            className={Styles.socialMediaItem}
+            className={Styles.listItem}
           >
             <FaLinkedin size={40} className={Styles.icon} />
-            <span className={Styles.socialMediaText}>
-              {titles.linkedInProfile}
-            </span>
+            <span>{titles.linkedInProfile}</span>
           </a>
         </li>
         <li>
@@ -67,12 +89,10 @@ export const Drawer: FC = () => {
             href={process.env.GOOGLE_PLAY_PROFILE_URL!}
             target="_blank"
             rel="noreferrer"
-            className={Styles.socialMediaItem}
+            className={Styles.listItem}
           >
             <FaGooglePlay size={40} className={Styles.icon} />
-            <span className={Styles.socialMediaText}>
-              {titles.googlePlayStoreProfile}
-            </span>
+            <span>{titles.googlePlayStoreProfile}</span>
           </a>
         </li>
         <li>
@@ -80,14 +100,17 @@ export const Drawer: FC = () => {
             href={process.env.GITHUB_PROFILE_URL!}
             target="_blank"
             rel="noreferrer"
-            className={Styles.socialMediaItem}
+            className={Styles.listItem}
           >
             <FaGithub size={40} className={Styles.icon} />
-            <span className={Styles.socialMediaText}>
-              {titles.gitHubProfile}
-            </span>
+            <span>{titles.gitHubProfile}</span>
           </a>
         </li>
+        <li className={Styles.listItem}>
+          <HiTranslate size={40} className={Styles.icon} />
+          <hr className={Styles.divider} />
+        </li>
+        {renderLanguageItems()}
       </ul>
     </div>
   )
