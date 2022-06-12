@@ -1,4 +1,4 @@
-import { locales } from '@utils/constants'
+import { locales, languages } from '@utils/constants'
 
 describe('Testing if have any duplicate localization', () => {
   const isDuplicated = (localizations: string[]): boolean => {
@@ -20,6 +20,11 @@ describe('Testing if have any duplicate localization', () => {
 
   test('Should check if an locale has been duplicated', () => {
     const duplication = isDuplicated(locales)
+    expect(duplication).toBeFalsy()
+  })
+
+  test('Should check if an language has been duplicated', () => {
+    const duplication = isDuplicated(languages)
     expect(duplication).toBeFalsy()
   })
 })
