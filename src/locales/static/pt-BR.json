@@ -2,6 +2,7 @@
   "page": {
     "body": {
       "searchInputPlaceholder": "Pesquisar aplicativos",
+      "message404": "Erro 404: Aplicativo não encontrado",
       "titles": {
         "goToHomePage": "Ir para a página inicial",
         "clearSearchInput": "Limpar pesquisa",
