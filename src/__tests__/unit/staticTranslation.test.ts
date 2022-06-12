@@ -17,6 +17,7 @@ describe('Testing "getStaticTranslationForUserLocale" method from "pageTranslati
       const { titles } = body
 
       expect(body.searchInputPlaceholder).toBeDefined()
+      expect(body.message404).toBeDefined()
       expect(titles.goToHomePage).toBeDefined()
       expect(titles.clearSearchInput).toBeDefined()
       expect(titles.linkedInProfile).toBeDefined()
