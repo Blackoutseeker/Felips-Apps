@@ -2,6 +2,7 @@ export type StaticTranslation = {
   page: {
     body: {
       searchInputPlaceholder: string
+      message404: string
       titles: {
         goToHomePage: string
         clearSearchInput: string
