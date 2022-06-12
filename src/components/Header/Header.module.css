@@ -14,10 +14,23 @@
   @apply text-white font-bold text-2xl min-w-max;
 }
 
-.socialMediasContainer {
+.buttonsContainer {
   @apply space-x-[40px] hidden md:flex;
 }
 
 .icon {
   @apply fill-secondary duration-200 hover:fill-white;
+}
+
+.translateButton {
+  @apply relative flex justify-center items-center outline-none;
+}
+
+.languagesList {
+  @apply absolute top-10 right-0 min-w-max bg-primary;
+  @apply border-[1px] border-secondary rounded-md shadow-md overflow-hidden;
+}
+
+.languageItem {
+  @apply text-white font-bold py-2 px-3 duration-200 hover:bg-background;
 }
