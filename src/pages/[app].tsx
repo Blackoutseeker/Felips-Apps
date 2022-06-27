@@ -2,6 +2,7 @@ import type { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { getSeoTranslationForUserLocale } from '@services/pageTranslation'
 import { getApp, getApps } from '@services/apps'
+import { apps as appPages, locales } from '@utils/constants'
 import Head from 'next/head'
 import {
   Header,
@@ -11,7 +12,6 @@ import {
   SectionFooter,
   Footer
 } from '@components/index'
-import { apps as appPages, locales } from '@utils/constants'
 import Styles from '@styles/Page.module.css'
 
 interface AppPageProps {
@@ -37,10 +37,25 @@ const AppPage: NextPage<AppPageProps> = ({ appName }) => {
     )
   })
 
+  const renderHreflangTags = locales.map(locale => (
+    <link
+      key={locale}
+      rel="alternate"
+      href={`https://felips-apps.vercel.app/${locale}/${appName}`}
+      hrefLang={locale.toLowerCase()}
+    />
+  ))
+
   return (
     <main className={Styles.pageContainer}>
       <Head>
-        <title>{app.name} - Felip&apos;s Apps</title>
+        <title>{`${appName} - Felip's Apps`}</title>
+        {renderHreflangTags}
+        <link
+          rel="alternate"
+          href={`https://felips-apps.vercel.app/${appName}`}
+          hrefLang="x-default"
+        />
         <meta
           name="description"
           content={seoTranslation.page.head.description}
