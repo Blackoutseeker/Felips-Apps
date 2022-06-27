@@ -1,12 +1,12 @@
 # Felip&apos;s Apps
-​
+
 <p align="center">
 
 <img src="https://user-images.githubusercontent.com/56811005/173232988-37ee1665-0526-4672-8620-48dcfaf68e19.png" height="200">
 
 </p>
 
-![Version](https://img.shields.io/badge/Version-1.0.0-272A34)
+![Version](https://img.shields.io/badge/Version-1.0.1-272A34)
 ![Jest](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Run%20Jest%20tests?label=Jest%20tests)
 ![ESLint](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Check%20code%20with%20ESLint?label=ESLint%20code%20check)
 ![Prettier](https://img.shields.io/github/workflow/status/Blackoutseeker/Felips-Apps/Check%20code%20style%20with%20Prettier?label=Prettier%20code%20style)
