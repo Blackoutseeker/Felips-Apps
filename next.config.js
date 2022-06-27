@@ -17,7 +17,9 @@ const nextConfig = {
     AD_EXCHANGE: process.env.AD_EXCHANGE,
     PUBLISHER_ID: process.env.PUBLISHER_ID,
     RELATIONSHIP_TYPE: process.env.RELATIONSHIP_TYPE,
-    CERTIFICATION_AUTHORITY: process.env.CERTIFICATION_AUTHORITY
+    CERTIFICATION_AUTHORITY: process.env.CERTIFICATION_AUTHORITY,
+
+    GOOGLE_AD_SENSE_ID: process.env.GOOGLE_AD_SENSE_ID
   },
   rewrites: async () => [
     {
