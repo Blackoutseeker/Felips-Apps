@@ -48,7 +48,12 @@ export const AppCard: FC<AppCardProps> = ({ app }) => {
         </a>
       </div>
       <Link href={`/${app.name}`} passHref>
-        <a className={Styles.linkButton} title={app.name}>
+        <a
+          className={Styles.linkButton}
+          target="_blank"
+          rel="noreferrer"
+          title={app.name}
+        >
           <button>
             <FaExternalLinkAlt className={Styles.buttonIcon} size={15} />
           </button>
