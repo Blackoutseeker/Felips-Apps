@@ -86,6 +86,7 @@ const AppPage: NextPage<AppPageProps> = ({ appName }) => {
           />
           <SectionFooter
             googlePlayStoreUrl={app.googlePlayUrl}
+            locale={locale ?? 'en'}
             storeButtonTitle={app.content.viewOnGooglePlayStore}
             sourceCodeUrl={app.sourceCodeUrl}
           />
