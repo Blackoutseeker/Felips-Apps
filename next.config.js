@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['play-lh.googleusercontent.com']
+    domains: ['play-lh.googleusercontent.com', 'play.google.com']
   },
   i18n: {
     localeDetection: true,
