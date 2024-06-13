@@ -5,7 +5,6 @@ const nextConfig = {
     domains: ['play-lh.googleusercontent.com', 'play.google.com']
   },
   i18n: {
-    localeDetection: true,
     defaultLocale: 'en-US',
     locales: ['en-US', 'pt-BR']
   },
