@@ -3,10 +3,10 @@
 }
 
 .sourceCodeButton {
-  @apply flex justify-between items-center min-w-[220px] h-[50px];
-  @apply bg-[#121212] px-[15px] rounded-lg;
+  @apply flex h-[50px] min-w-[220px] items-center justify-between;
+  @apply rounded-lg bg-[#121212] px-[15px];
 }
 
 .buttonText {
-  @apply min-w-max text-white font-bold mx-[15px];
+  @apply mx-[15px] min-w-max font-bold text-white;
 }

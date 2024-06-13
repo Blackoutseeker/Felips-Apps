@@ -1,7 +1,7 @@
 .messageWrapper {
-  @apply flex justify-center items-center w-full h-screen;
+  @apply flex h-screen w-full items-center justify-center;
 }
 
 .messageText {
-  @apply text-white font-bold text-center text-3xl mx-5;
+  @apply mx-5 text-center text-3xl font-bold text-white;
 }

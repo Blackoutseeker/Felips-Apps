@@ -10,9 +10,9 @@ import { Framework } from '@utils/constants'
  */
 
 const getStaticAppIcon = (appName: string): StaticImageData => {
-  const appIcon:
-    | StaticImageData
-    | undefined = require(`@assets/apps/${appName}/icon.png`)
+  const appIcon: StaticImageData | undefined = require(
+    `@assets/apps/${appName}/icon.png`
+  )
 
   if (!appIcon) {
     throw new Error(

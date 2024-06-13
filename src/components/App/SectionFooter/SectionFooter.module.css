@@ -1,5 +1,5 @@
 .footerContainer {
-  @apply flex justify-center items-center flex-wrap mt-5 md:justify-end;
+  @apply mt-5 flex flex-wrap items-center justify-center md:justify-end;
 }
 
 .storeButton {

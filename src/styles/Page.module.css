@@ -1,5 +1,5 @@
 .pageContainer {
-  @apply flex flex-col w-full;
+  @apply flex w-full flex-col;
 }
 
 .appsListWrapper {
@@ -8,9 +8,9 @@
 
 .appsList {
   @apply grid grid-flow-row grid-cols-1 sm:grid-cols-2;
-  @apply 2xl:grid-cols-3 gap-10 p-10;
+  @apply gap-10 p-10 2xl:grid-cols-3;
 }
 
 .appArticleContainer {
-  @apply flex flex-col w-full md:w-4/5 lg:w-3/5 my-10 mx-4;
+  @apply mx-4 my-10 flex w-full flex-col md:w-4/5 lg:w-3/5;
 }

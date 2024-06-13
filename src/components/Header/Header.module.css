@@ -1,21 +1,21 @@
 .headerVisible {
-  @apply sticky top-0 flex justify-between items-center px-4;
-  @apply h-[60px] bg-primary border-b-[1px] border-b-secondary;
-  @apply duration-200 z-10 md:justify-between md:px-[70px];
+  @apply sticky top-0 flex items-center justify-between px-4;
+  @apply h-[60px] border-b-[1px] border-b-secondary bg-primary;
+  @apply z-10 duration-200 md:justify-between md:px-[70px];
 }
 
 .headerInvisible {
-  @apply sticky -top-[60px] flex justify-between items-center px-4;
-  @apply h-[60px] bg-primary border-b-[1px] border-b-secondary;
-  @apply duration-200 z-10 md:justify-between md:px-[70px];
+  @apply sticky -top-[60px] flex items-center justify-between px-4;
+  @apply h-[60px] border-b-[1px] border-b-secondary bg-primary;
+  @apply z-10 duration-200 md:justify-between md:px-[70px];
 }
 
 .logo {
-  @apply text-white font-bold text-2xl min-w-max;
+  @apply min-w-max text-2xl font-bold text-white;
 }
 
 .buttonsContainer {
-  @apply space-x-[40px] hidden md:flex;
+  @apply hidden space-x-[40px] md:flex;
 }
 
 .icon {
@@ -23,14 +23,14 @@
 }
 
 .translateButton {
-  @apply relative flex justify-center items-center outline-none;
+  @apply relative flex items-center justify-center outline-none;
 }
 
 .languagesList {
-  @apply absolute top-10 right-0 min-w-max bg-primary;
-  @apply border-[1px] border-secondary rounded-md shadow-md overflow-hidden;
+  @apply absolute right-0 top-10 min-w-max bg-primary;
+  @apply overflow-hidden rounded-md border-[1px] border-secondary shadow-md;
 }
 
 .languageItem {
-  @apply text-white font-bold py-2 px-3 duration-200 hover:bg-background;
+  @apply px-3 py-2 font-bold text-white duration-200 hover:bg-background;
 }
