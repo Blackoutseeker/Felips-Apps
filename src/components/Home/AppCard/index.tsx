@@ -12,19 +12,21 @@ interface AppCardProps {
 export const AppCard: FC<AppCardProps> = ({ app }) => {
   return (
     <li className={Styles.appCardContainer}>
-      <Link href={`/${app.name}`} passHref>
-        <a className={Styles.appLogoContainer} title={app.name}>
-          <Image
-            src={app.icon}
-            width={100}
-            height={100}
-            alt={app.name}
-            quality={90}
-          />
-          <h3 className={Styles.appNameText} translate="no">
-            {app.name}
-          </h3>
-        </a>
+      <Link
+        href={`/${app.name}`}
+        className={Styles.appLogoContainer}
+        title={app.name}
+      >
+        <Image
+          src={app.icon}
+          width={100}
+          height={100}
+          alt={app.name}
+          quality={90}
+        />
+        <h3 className={Styles.appNameText} translate="no">
+          {app.name}
+        </h3>
       </Link>
       <p className={Styles.appPresentationText}>
         {app.content.presentationText}
@@ -47,17 +49,16 @@ export const AppCard: FC<AppCardProps> = ({ app }) => {
           <FaGithub className={Styles.buttonIcon} size={30} />
         </a>
       </div>
-      <Link href={`/${app.name}`} passHref>
-        <a
-          className={Styles.linkButton}
-          target="_blank"
-          rel="noreferrer"
-          title={app.name}
-        >
-          <button>
-            <FaExternalLinkAlt className={Styles.buttonIcon} size={15} />
-          </button>
-        </a>
+      <Link
+        href={`/${app.name}`}
+        className={Styles.linkButton}
+        target="_blank"
+        rel="noreferrer"
+        title={app.name}
+      >
+        <button>
+          <FaExternalLinkAlt className={Styles.buttonIcon} size={15} />
+        </button>
       </Link>
     </li>
   )

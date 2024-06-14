@@ -66,10 +66,8 @@ export const Drawer: FC = () => {
         >
           <FaTimes color="#fff" size={20} />
         </button>
-        <Link href={`/${locale}`} passHref>
-          <a translate="no" className={Styles.logo}>
-            Felip&apos;s Apps
-          </a>
+        <Link href={`/${locale}`} className={Styles.logo}>
+          Felip&apos;s Apps
         </Link>
       </header>
       <ul className={Styles.buttonsList}>

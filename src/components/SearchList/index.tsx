@@ -11,24 +11,22 @@ interface AppItemProps {
 const AppItem: FC<AppItemProps> = ({ app }) => {
   return (
     <div>
-      <Link href={`/${app.name}`} passHref>
-        <a className={Styles.appItem} title={app.name}>
-          <div className={Styles.appLogo}>
-            <Image
-              src={app.icon}
-              width={100}
-              height={100}
-              alt={app.name}
-              quality={90}
-            />
-          </div>
-          <div className={Styles.appInfo}>
-            <h3 className={Styles.appNameText}>{app.name}</h3>
-            <p className={Styles.appPresentationText}>
-              {app.content.presentationText}
-            </p>
-          </div>
-        </a>
+      <Link href={`/${app.name}`} className={Styles.appItem} title={app.name}>
+        <div className={Styles.appLogo}>
+          <Image
+            src={app.icon}
+            width={100}
+            height={100}
+            alt={app.name}
+            quality={90}
+          />
+        </div>
+        <div className={Styles.appInfo}>
+          <h3 className={Styles.appNameText}>{app.name}</h3>
+          <p className={Styles.appPresentationText}>
+            {app.content.presentationText}
+          </p>
+        </div>
       </Link>
     </div>
   )

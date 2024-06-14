@@ -72,10 +72,13 @@ export const Header: FC<HeaderProps> = ({ apps }) => {
       }
     >
       <Drawer />
-      <Link href={`/${locale}`} passHref>
-        <a title={titles.goToHomePage} translate="no" className={Styles.logo}>
-          Felip&apos;s Apps
-        </a>
+      <Link
+        href={`/${locale}`}
+        title={titles.goToHomePage}
+        translate="no"
+        className={Styles.logo}
+      >
+        Felip&apos;s Apps
       </Link>
       <SearchBar apps={apps} />
       <div className={Styles.buttonsContainer}>
