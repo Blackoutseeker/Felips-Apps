@@ -34,8 +34,8 @@ export const Banner: FC<BannerProps> = ({
         <div className={Styles.iconContainer}>
           <Image
             src={appIcon}
-            layout="fill"
-            objectFit="contain"
+            width={150}
+            height={150}
             alt={appName}
             quality={90}
           />
