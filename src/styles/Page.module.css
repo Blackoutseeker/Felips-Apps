@@ -1,14 +1,14 @@
 .pageContainer {
-  @apply flex w-full flex-col;
+  @apply flex min-h-screen w-full flex-col;
 }
 
 .appsListWrapper {
-  @apply flex w-full justify-center;
+  @apply flex flex-grow justify-center;
 }
 
 .appsList {
-  @apply grid grid-flow-row grid-cols-1 sm:grid-cols-2;
-  @apply gap-10 p-10 2xl:grid-cols-3;
+  @apply grid grid-flow-row grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3;
+  @apply gap-10 p-10;
 }
 
 .appArticleContainer {
