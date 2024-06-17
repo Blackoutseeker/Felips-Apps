@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 import { Framework } from '@utils/constants'
-import type { ContentTranslation } from './index'
+import type { ContentTranslation, DeleteTranslation } from './index'
 
 export type App = {
   name: string
@@ -10,4 +10,5 @@ export type App = {
   googlePlayUrl: string
   content: ContentTranslation
   screenshots: StaticImageData[] | string[]
+  delete?: DeleteTranslation
 }
