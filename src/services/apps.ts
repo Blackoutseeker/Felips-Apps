@@ -1,5 +1,8 @@
 import type { App } from '@models/index'
-import { getContentTranslationForUserLocale } from '@services/pageTranslation'
+import {
+  getContentTranslationForUserLocale,
+  getDeleteTranslationForUserLocale
+} from '@services/pageTranslation'
 import { Framework } from '@utils/constants'
 
 /**
@@ -30,7 +33,8 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/nfESY0y7g43pUuj9eV5KYFPA5JyQ_tosc34lyg4e-RfTJgsyb2y5kYovFfl264QYRpc=w720-h310-rw',
       'https://play-lh.googleusercontent.com/hYbYK3GQAlTE4fFYCwm1K5jjX6M2kofkWH_gCSvPnLxexO-WKyibT6Ni2jXp7nhDTQ18=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Lineker')
   },
   {
     name: 'Qr Coder',
@@ -56,7 +60,8 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/UIm6PbNCoVn-BzjuiDCZsGDrY8Ig0sFiCKVr2u2z2BI8v_yWC-d_gGhnCjvTxPJNzJE=w720-h310-rw',
       'https://play-lh.googleusercontent.com/IPDy3Cye2fWG3to39-LQCsgsvwv1R7311rDluVa6QdnpzXIYAsGe4qBJDjCPKB57HIw=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Mister')
   },
   {
     name: 'Bookep',
@@ -69,7 +74,8 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/i6yaa1ayFwNLQIrVlekwWNeq9-_zv_EZsFhCSoztAV0wLiVXmdwTHpa7qwG4MiQjCKk=w720-h310-rw',
       'https://play-lh.googleusercontent.com/XWaOzOKSc0hS39IQOTICXzlDvJvfGPzyx6v6XqQOzMA7O1w9v7hWzdjcpvxSimn4cg=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Bookep')
   }
 ]
 
