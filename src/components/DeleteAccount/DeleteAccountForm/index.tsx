@@ -1,6 +1,7 @@
 import type { FC, FormEvent } from 'react'
 import type { App } from '@models/app'
 import { useState } from 'react'
+import { formatEmailPlaceholder } from '@utils/format'
 import Image from 'next/image'
 import Styles from './DeleteAccountForm.module.css'
 
@@ -13,11 +14,19 @@ export const DeleteAccountForm: FC<DeleteAccountFormProps> = ({ app }) => {
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
 
+  const emailPlaceholder = formatEmailPlaceholder(
+    app.delete?.emailPlaceholder ?? ''
+  )
+
   const disabled = email.length <= 0
 
   const onSubmit = (event: FormEvent) => {
     event.preventDefault()
   }
+
+  const renderDataList = app.delete?.dataList.map(data => (
+    <li key={data}>{data}</li>
+  ))
 
   return (
     <div className={Styles.formWrapper}>
@@ -26,15 +35,15 @@ export const DeleteAccountForm: FC<DeleteAccountFormProps> = ({ app }) => {
           <Image src={app.icon} width={100} height={100} alt={app.name} />
           <div className={Styles.appHeaderTextWrapper}>
             <h1 className={Styles.appTitle}>{app.name}</h1>
-            <h2 className={Styles.appSubtitle}>By Felip&apos;s Tudio</h2>
+            <h2 className={Styles.appSubtitle}>{app.delete?.author}</h2>
           </div>
         </div>
-        <h2 className={Styles.appTitle}>Request account deletion</h2>
+        <h2 className={Styles.appTitle}>{app.delete?.title}</h2>
         <input
           className={Styles.formInput}
           required
           type="email"
-          placeholder="App account email*"
+          placeholder={emailPlaceholder}
           value={email}
           onChange={({ currentTarget }) => {
             setEmail(currentTarget.value)
@@ -43,23 +52,19 @@ export const DeleteAccountForm: FC<DeleteAccountFormProps> = ({ app }) => {
         <textarea
           className={Styles.formInput}
           maxLength={150}
-          placeholder="Message (optional)"
+          placeholder={app.delete?.messagePlaceholder}
           value={message}
           onChange={({ currentTarget }) => {
             setMessage(currentTarget.value)
           }}
         />
         <span className={Styles.counter}>{message.length}/150</span>
-        <h2 className={Styles.appTitle}>The following data will be deleted:</h2>
-        <ul className={Styles.appSubtitle}>
-          <li>All your links</li>
-          <li>All your filters</li>
-          <li>Your entire history</li>
-        </ul>
+        <h2 className={Styles.appTitle}>{app.delete?.listTitle}</h2>
+        <ul className={Styles.dataList}>{renderDataList}</ul>
         <input
           className={Styles.submitButton}
           type="submit"
-          value="Confirm and submit"
+          value={app.delete?.submitButtonTitle}
           disabled={disabled}
         />
       </form>
