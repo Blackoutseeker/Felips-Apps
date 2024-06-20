@@ -19,7 +19,11 @@
 }
 
 .appSubtitle {
-  @apply list-disc text-base;
+  @apply text-base;
+}
+
+.dataList {
+  @apply list-disc px-5 text-base;
 }
 
 .formInput {
