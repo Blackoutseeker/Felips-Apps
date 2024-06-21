@@ -1,26 +1,18 @@
-import type { StaticImageData } from 'next/image'
 import type { App } from '@models/index'
-import { getContentTranslationForUserLocale } from '@services/pageTranslation'
+import {
+  getContentTranslationForUserLocale,
+  getDeleteTranslationForUserLocale
+} from '@services/pageTranslation'
 import { Framework } from '@utils/constants'
 
 /**
- * Get the static app icon for the given app name.
+ * Get the app icon path for the given app name.
  * @param appName - The name of the app to get the icon for.
- * @returns {StaticImageData} The icon for the app.
+ * @returns {string} The icon path for the app.
  */
 
-const getStaticAppIcon = (appName: string): StaticImageData => {
-  const appIcon:
-    | StaticImageData
-    | undefined = require(`@assets/apps/${appName}/icon.png`)
-
-  if (!appIcon) {
-    throw new Error(
-      `App icon not found for ${appName}, on <root>/src/assets/apps/${appName}/icon.png`
-    )
-  }
-
-  return appIcon
+const getAppIcon = (appName: string): string => {
+  return `/assets/apps/${appName}/icon.png`
 }
 
 /**
@@ -32,7 +24,7 @@ const getStaticAppIcon = (appName: string): StaticImageData => {
 export const getApps = (locale: string | undefined): App[] => [
   {
     name: 'Lineker',
-    icon: getStaticAppIcon('Lineker'),
+    icon: getAppIcon('Lineker'),
     sourceCodeUrl: 'https://github.com/Blackoutseeker/Lineker-Mobile-Flutter',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.lineker',
@@ -41,11 +33,12 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/nfESY0y7g43pUuj9eV5KYFPA5JyQ_tosc34lyg4e-RfTJgsyb2y5kYovFfl264QYRpc=w720-h310-rw',
       'https://play-lh.googleusercontent.com/hYbYK3GQAlTE4fFYCwm1K5jjX6M2kofkWH_gCSvPnLxexO-WKyibT6Ni2jXp7nhDTQ18=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Lineker')
   },
   {
     name: 'Qr Coder',
-    icon: getStaticAppIcon('Qr Coder'),
+    icon: getAppIcon('Qr Coder'),
     sourceCodeUrl: 'https://github.com/Blackoutseeker/QrCoder-Flutter',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.qrcoder',
@@ -58,7 +51,7 @@ export const getApps = (locale: string | undefined): App[] => [
   },
   {
     name: 'Mister',
-    icon: getStaticAppIcon('Mister'),
+    icon: getAppIcon('Mister'),
     sourceCodeUrl: 'https://github.com/Blackoutseeker/Mister',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.mister',
@@ -67,11 +60,12 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/UIm6PbNCoVn-BzjuiDCZsGDrY8Ig0sFiCKVr2u2z2BI8v_yWC-d_gGhnCjvTxPJNzJE=w720-h310-rw',
       'https://play-lh.googleusercontent.com/IPDy3Cye2fWG3to39-LQCsgsvwv1R7311rDluVa6QdnpzXIYAsGe4qBJDjCPKB57HIw=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Mister')
   },
   {
     name: 'Bookep',
-    icon: getStaticAppIcon('Bookep'),
+    icon: getAppIcon('Bookep'),
     sourceCodeUrl: 'https://github.com/Blackoutseeker/EEEP-README',
     googlePlayUrl:
       'https://play.google.com/store/apps/details?id=com.FelipsTudio.bookep',
@@ -80,7 +74,8 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/i6yaa1ayFwNLQIrVlekwWNeq9-_zv_EZsFhCSoztAV0wLiVXmdwTHpa7qwG4MiQjCKk=w720-h310-rw',
       'https://play-lh.googleusercontent.com/XWaOzOKSc0hS39IQOTICXzlDvJvfGPzyx6v6XqQOzMA7O1w9v7hWzdjcpvxSimn4cg=w720-h310-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Bookep')
   }
 ]
 

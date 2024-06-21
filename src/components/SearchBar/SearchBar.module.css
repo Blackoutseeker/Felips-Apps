@@ -1,10 +1,10 @@
 .searchWrapper {
-  @apply relative hidden flex-col max-w-[555px] w-full mx-5 md:flex;
+  @apply relative mx-5 hidden w-full max-w-[555px] flex-col md:flex;
 }
 
 .searchBarContainer {
-  @apply flex w-full h-[30px] py-[6px] px-[10px];
-  @apply bg-background rounded-md;
+  @apply flex h-[30px] w-full px-[10px] py-[6px];
+  @apply rounded-md bg-background;
 }
 
 .icon {
@@ -12,7 +12,7 @@
 }
 
 .searchInput {
-  @apply w-full h-full mx-[10px] bg-transparent outline-none;
+  @apply mx-[10px] h-full w-full bg-transparent outline-none;
   @apply text-white placeholder:text-secondary;
 }
 
@@ -25,11 +25,11 @@
 }
 
 .searchHeader {
-  @apply fixed top-0 left-0 flex justify-center items-center w-full;
-  @apply h-[60px] px-4 bg-primary border-b-[1px] border-b-secondary z-20;
+  @apply fixed left-0 top-0 flex w-full items-center justify-center;
+  @apply z-20 h-[60px] border-b-[1px] border-b-secondary bg-primary px-4;
 }
 
 .searchHeaderInput {
-  @apply w-full h-full mx-4 bg-transparent outline-none;
-  @apply text-white text-lg placeholder:text-secondary;
+  @apply mx-4 h-full w-full bg-transparent outline-none;
+  @apply text-lg text-white placeholder:text-secondary;
 }

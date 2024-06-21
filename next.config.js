@@ -2,10 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['play-lh.googleusercontent.com', 'play.google.com']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'play.google.com'
+      }
+    ]
   },
   i18n: {
-    localeDetection: true,
     defaultLocale: 'en-US',
     locales: ['en-US', 'pt-BR']
   },

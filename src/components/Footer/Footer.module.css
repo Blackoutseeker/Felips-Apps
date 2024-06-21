@@ -1,10 +1,10 @@
 .footer {
-  @apply flex justify-center items-center flex-col py-[35px] px-[70px] bg-primary;
-  @apply border-t-[1px] border-secondary space-y-[30px] lg:space-y-0 lg:flex-row;
+  @apply flex flex-col items-center justify-center bg-primary px-[70px] py-[35px];
+  @apply space-y-[30px] border-t-[1px] border-secondary lg:flex-row lg:space-y-0;
 }
 
 .emailContainer {
-  @apply flex justify-center w-full;
+  @apply flex w-full justify-center;
 }
 
 .emailText {
@@ -16,13 +16,13 @@
 }
 
 .payPalButton {
-  @apply flex items-center h-[50px] bg-[#003087] space-x-[10px] text-white;
-  @apply font-bold text-lg italic px-[20px] rounded-lg outline-none;
+  @apply flex h-[50px] items-center space-x-[10px] bg-[#003087] text-white;
+  @apply rounded-lg px-[20px] text-lg font-bold italic outline-none;
 }
 
 .buyMeACoffeeButton {
-  @apply flex items-center min-w-max h-[50px] bg-[#ffef12] space-x-[20px];
-  @apply text-black text-lg font-bold px-[20px] rounded-lg outline-none;
+  @apply flex h-[50px] min-w-max items-center space-x-[20px] bg-[#ffef12];
+  @apply rounded-lg px-[20px] text-lg font-bold text-black outline-none;
 }
 
 .chocolateIconWrapper {

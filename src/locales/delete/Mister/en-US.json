@@ -1,0 +1,13 @@
+{
+  "author": "By Felip's Tudio",
+  "title": "Request account deletion",
+  "emailPlaceholder": "App account email",
+  "messagePlaceholder": "Message (optional)",
+  "listTitle": "The following data will be deleted",
+  "dataList": [
+    "Your profile, including all your public data displayed on it",
+    "Your profile picture",
+    "Your indexing in the search within the application"
+  ],
+  "submitButtonTitle": "Confirm and submit"
+}

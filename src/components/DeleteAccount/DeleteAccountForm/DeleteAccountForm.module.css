@@ -1,0 +1,41 @@
+.formWrapper {
+  @apply flex h-full w-full items-center justify-center text-white;
+}
+
+.formContainer {
+  @apply flex max-w-[350px] flex-1 flex-col items-center justify-center space-y-5;
+}
+
+.appHeader {
+  @apply mb-5 flex w-full items-center space-x-5;
+}
+
+.appHeaderTextWrapper {
+  @apply flex flex-col space-y-5 font-bold;
+}
+
+.appTitle {
+  @apply text-xl font-bold;
+}
+
+.appSubtitle {
+  @apply text-base;
+}
+
+.dataList {
+  @apply list-disc px-5 text-base;
+}
+
+.formInput {
+  @apply w-full rounded-[4px] border-[1px] border-secondary bg-transparent;
+  @apply resize-none p-[14px] text-base text-white placeholder:text-secondary;
+}
+
+.counter {
+  @apply w-full text-right text-sm text-secondary;
+}
+
+.submitButton {
+  @apply w-full rounded-[4px] px-5 py-[14px] font-bold disabled:cursor-default disabled:bg-primary;
+  @apply cursor-pointer bg-white text-base text-background disabled:text-secondary;
+}

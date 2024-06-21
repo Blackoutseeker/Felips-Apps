@@ -1,0 +1,13 @@
+{
+  "author": "Por Felip's Tudio",
+  "title": "Requisitar exclusão de conta",
+  "emailPlaceholder": "E-mail da conta do aplicativo",
+  "messagePlaceholder": "Mensagem (opcional)",
+  "listTitle": "Os seguintes dados serão deletados",
+  "dataList": [
+    "Todos os dados do seu perfil, sendo eles públicos ou privados",
+    "Informações e fotos de livros físicos",
+    "Livros digitais"
+  ],
+  "submitButtonTitle": "Confirmar e enviar"
+}
