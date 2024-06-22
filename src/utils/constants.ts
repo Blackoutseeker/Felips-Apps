@@ -12,6 +12,6 @@ export enum Framework {
   ReactNative = 'React Native'
 }
 
-export const apps = ['Lineker', 'Qr Coder', 'Mister', 'Bookep']
+export const apps = ['Lineker', 'Qr Coder', 'Mister', 'Bookep', 'Futgres']
 
 export const pages = ['home', ...apps]
