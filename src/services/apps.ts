@@ -88,7 +88,8 @@ export const getApps = (locale: string | undefined): App[] => [
     screenshots: [
       'https://play-lh.googleusercontent.com/QLHmhXCoRv2rvOF-arkquPEPJBCKBnkrndP6rWT9pyJCEcSXXMCtiej8J8lhfg2V5zw=w2560-h1440-rw',
       'https://play-lh.googleusercontent.com/JL2vzF069URvTHzHWUIchZnVE8tw8peSLPA0zdMFxts1gqZOJ4fAVslZYjZDcZ63jTo=w2560-h1440-rw'
-    ]
+    ],
+    delete: getDeleteTranslationForUserLocale(locale, 'Futgres')
   }
 ]
 
