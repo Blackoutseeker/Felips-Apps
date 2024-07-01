@@ -1,0 +1,14 @@
+{
+  "presentationText": "Create football teams and schedule your matches with personalized times and locations.",
+  "viewOnGooglePlayStore": "View on Google Play Store",
+  "viewSourceCode": "View source code",
+  "developmentText": "Developed with",
+  "descriptionTitle": "Description",
+  "descriptionText": "Futgres is an app that allows you to create soccer teams and schedule a match with a personalized location and time.",
+  "screenshotTexts": [
+    "You can track all your team's data, viewing the total number of wins and losses accumulated in each championship, in addition to listing all the players that make up the team.",
+    "Schedule and view disputes between teams, with definitions of location, date and time for each dispute."
+  ],
+  "motivationTitle": "Motivation",
+  "motivationText": "The local community of football players in the city of Milagres - CE (Brazil) was in need of a tool that could manage their matches, where each team's victory and defeat could be recorded. After analyzing the requirements of the community, I developed an application that could meet their demands."
+}
