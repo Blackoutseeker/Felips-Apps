@@ -76,6 +76,19 @@ export const getApps = (locale: string | undefined): App[] => [
       'https://play-lh.googleusercontent.com/XWaOzOKSc0hS39IQOTICXzlDvJvfGPzyx6v6XqQOzMA7O1w9v7hWzdjcpvxSimn4cg=w720-h310-rw'
     ],
     delete: getDeleteTranslationForUserLocale(locale, 'Bookep')
+  },
+  {
+    name: 'Futgres',
+    icon: getAppIcon('Futgres'),
+    sourceCodeUrl: 'https://github.com/Blackoutseeker/Futgres',
+    googlePlayUrl:
+      'https://play.google.com/store/apps/details?id=com.FelipsTudio.futgres',
+    framework: Framework.Flutter,
+    content: getContentTranslationForUserLocale(locale, 'Futgres'),
+    screenshots: [
+      'https://play-lh.googleusercontent.com/QLHmhXCoRv2rvOF-arkquPEPJBCKBnkrndP6rWT9pyJCEcSXXMCtiej8J8lhfg2V5zw=w2560-h1440-rw',
+      'https://play-lh.googleusercontent.com/JL2vzF069URvTHzHWUIchZnVE8tw8peSLPA0zdMFxts1gqZOJ4fAVslZYjZDcZ63jTo=w2560-h1440-rw'
+    ]
   }
 ]
 
