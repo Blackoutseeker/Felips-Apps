@@ -1,0 +1,14 @@
+{
+  "presentationText": "Crie times de futebol e agende suas partidas com horários e locais personalizados.",
+  "viewOnGooglePlayStore": "Ver no Google Play Store",
+  "viewSourceCode": "Ver código-fonte",
+  "developmentText": "Desenvolvido com",
+  "descriptionTitle": "Descrição",
+  "descriptionText": "Futgres é um aplicativo que permite a criação de times de futebol, e marcar uma partida com local e horário de forma personalizada.",
+  "screenshotTexts": [
+    "É possível acompanhar todos os dados do seu time, visualizando o número total de vitórias e derrotas acumuladas a cada campeonato, além de listar todos os jogadores que compõem o time.",
+    "Agende e visualize disputas entre times, com as definições de local, data e horário para cada disputa."
+  ],
+  "motivationTitle": "Motivação",
+  "motivationText": "A comunidade local de jogadores de futebol da cidade de Milagres - CE estava precisando de uma ferramenta que pudesse gerenciar suas partidas, onde cada vitória e derrota de cada time pudesse ser registrada. Após eu analisar os requisitos da comunidade de jogadores, desenvolvi um aplicativo que pudesse suprir sua demanda."
+}
