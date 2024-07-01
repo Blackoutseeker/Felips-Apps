@@ -1,0 +1,12 @@
+{
+  "author": "By Felip's Tudio",
+  "title": "Request account deletion",
+  "emailPlaceholder": "App account email",
+  "messagePlaceholder": "Message (optional)",
+  "listTitle": "The following data will be deleted",
+  "dataList": [
+    "As an organizer; all your teams, including all player data",
+    "As a player; all your public and private data and your removal from all teams you participate in"
+  ],
+  "submitButtonTitle": "Confirm and submit"
+}
