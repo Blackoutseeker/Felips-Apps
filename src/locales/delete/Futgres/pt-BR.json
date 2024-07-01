@@ -1,0 +1,12 @@
+{
+  "author": "Por Felip's Tudio",
+  "title": "Requisitar exclusão de conta",
+  "emailPlaceholder": "E-mail da conta do aplicativo",
+  "messagePlaceholder": "Mensagem (opcional)",
+  "listTitle": "Os seguintes dados serão deletados",
+  "dataList": [
+    "Como um organizador; todos os seus times, incluindo os dados de todos os jogadores",
+    "Como um jogador; todos os seus dados públicos e privados, e remoção das suas participações de times"
+  ],
+  "submitButtonTitle": "Confirmar e enviar"
+}
